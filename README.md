@@ -15,7 +15,7 @@ This script signs in, adds an item to the cart, goes to the shopping cart, updat
 
 Runtime Settings were set to log only on errors and generate snapshot on errors, think times 75% to 150%
 
-This script has 5 transactions  
+This script has 5 transactions:  
 AOS-LRD-S01-01 Sign In  
 AOS-LRD-S01-02 Add To Cart  
 AOS-LRD-S01-03 Shopping Cart  
