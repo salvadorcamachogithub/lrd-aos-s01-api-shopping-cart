@@ -1,0 +1,5 @@
+- name: AOS-LRD-S01-01 Sign In
+- name: AOS-LRD-S01-02 Add To Cart
+- name: AOS-LRD-S01-03 Shopping Cart
+- name: AOS-LRD-S01-04 Update Quantity
+- name: AOS-LRD-S01-05 Remove Product

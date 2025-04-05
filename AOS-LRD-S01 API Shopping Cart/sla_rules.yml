@@ -1,0 +1,28 @@
+enabled: true                                                   # Allows the user to enable or disable all the rules in a category 
+reporterType: JUnit                                             # Allows to change the reporter type, supported reporters: [JUnit, Tap]
+reportName: sla_junit_report.xml                                # The report name, which is generated inside the script directory
+rules:                                                          # List of the rules which the SLA enforces
+  - rule: Transaction Response Time                             # The SLA rule measures the average duration of the given transactions
+    type: averageTRT                                            # The transaction type
+    enabled: true                                               # Allows the user to enable or disable a specific rule
+    arguments:                                                  # The arguments which a given type is expecting (at least one entry)
+      - transactionName: AOS-LRD-S01-01 Sign In                 # The name of the transaction for which we want to calculate the average
+        threshold:                                              
+        - averageTime: 10000                                     # The average time in milliseconds above which the SLA rule will fail
+      - transactionName: AOS-LRD-S01-02 Add To Cart             # The name of the transaction for which we want to calculate the average
+        threshold:                                              
+        - averageTime: 10000                                     # The average time in milliseconds above which the SLA rule will fail
+      - transactionName: AOS-LRD-S01-03 Shopping Cart           # The name of the transaction for which we want to calculate the average
+        threshold:                                              
+        - averageTime: 10000                                     # The average time in milliseconds above which the SLA rule will fail
+      - transactionName: AOS-LRD-S01-04 Update Quantity         # The name of the transaction for which we want to calculate the average
+        threshold:                                              
+        - averageTime: 10000                                     # The average time in milliseconds above which the SLA rule will fail
+      - transactionName: AOS-LRD-S01-05 Remove Product          # The name of the transaction for which we want to calculate the average
+        threshold:                                              
+        - averageTime: 10000                                     # The average time in milliseconds above which the SLA rule will fail
+
+#  - rule: Errors per Second                             # The SLA rule measures whether the errors per second over a specified time interval exceed the defined threshold. 
+#    enabled: true                                               # Allows the user to enable or disable a specific rule
+#    arguments:                                                  # The arguments which a given type is expecting (at least one entry)
+#      percentage: 60
