@@ -11,7 +11,7 @@ This script was created with best practices, so it is more resilient, such as:
 * Think times at the end of each transaction to better simulate user behavior
 * Main URL and users parametrized, Public AOS by default, credentials parametrized
 
-This script signs in, adds an item to the cart, goes to the shopping cart, updates the quantity and then removed it from the shopping cart
+This script signs in, adds an item to the cart, goes to the shopping cart, updates the quantity and then removes it from the shopping cart
 
 Runtime Settings were set to log only on errors and generate snapshot on errors, think times 75% to 150%
 
