@@ -1,7 +1,7 @@
 Updated: 04.2025  
 Script created by Salvador Camacho
 
-This script is for LoadRunner Developer (Visual Studio Code IDE), there is a VuGen DevWeb script that does the same steps called AOS-DevWeb-S01 API Shopping Cart
+This script is for Performance Engineering for Developers (LoadRunner Developer, Visual Studio Code IDE), there is a VuGen DevWeb script that does the same steps called AOS-DevWeb-S01 API Shopping Cart
 
 This script was created with best practices, so it is more resilient, such as:
 * Transaction naming
